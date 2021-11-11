@@ -1,29 +1,29 @@
 package models;
 
 public class Extras {
-    public String color;
-    public String rims;
+    public boolean color;
+    public int rims;
     public boolean carbon;
 
-    public Extras(String color, String rims, boolean carbon) {
+    public Extras(boolean color, int rims, boolean carbon) {
         this.color = color;
         this.rims = rims;
         this.carbon = carbon;
     }
 
-    public String getColor() {
+    public boolean getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(boolean color) {
         this.color = color;
     }
 
-    public String getRims() {
+    public int getRims() {
         return rims;
     }
 
-    public void setRims(String rims) {
+    public void setRims(int rims) {
         this.rims = rims;
     }
 
