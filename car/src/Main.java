@@ -12,12 +12,17 @@ public class Main {
 
 
     public static void main(String[]args){
-
-        System.out.println("Choose your Car!");
-        System.out.println("--------------------");
         System.out.println();
-        System.out.println("Choose your Category.");
-        System.out.println("Suv, Limo, Coupe, Cabrio");
+        System.out.println("Hallo Benutzer, viel Spass beim Modifizieren deines Fahrzeuges");
+        System.out.println();
+        System.out.println("______________________________________________");
+        System.out.println("| Wähle die Kategorie deines Auto aus         |");
+        System.out.println("| 1. Suv                                      |");
+        System.out.println("| 2. Limo                                     |");
+        System.out.println("| 3. Coupe                                    |");
+        System.out.println("| 4. Cabrio                                   |");
+        System.out.println("|_____________________________________________|");
+        System.out.println("Tippe hier die Zahl ein:");
         chooseCategory();
     }
 
@@ -25,45 +30,63 @@ public class Main {
         inputCategory = scanner.nextLine();
 
         switch (inputCategory){
-            case "Suv":
+            case "1":
                 chooseSuv();
                 break;
-            case "Limo":
+            case "2":
                 chooseLimo();
                 break;
-            case "Coupe":
+            case "3":
                 chooseCoupe();
                 break;
-            case "Cabrio":
+            case "4":
                 chooseCabrio();
                 break;
             default:
-                System.out.println("Type the exact word");
+                System.out.println("Tippe bloss die richtige Zahlen ein");
                 chooseCategory();
         }
     }
 
     public static void chooseSuv(){
-        System.out.println("Choose your Model");
-        System.out.println("Cayenne, Macan");
         System.out.println();
+        System.out.println("______________________________________________");
+        System.out.println("| Die SUV-Modelle die zur Verfügung wären:   |");
+        System.out.println("| 1. Cayenne Turbo (80'000.-)                |");
+        System.out.println("| 2. Macan GTS     (60'000.-)                |");
+        System.out.println("|____________________________________________|");
+        System.out.println("| 3. Falls du zurück zur Kategorie möchtest  |");
+        System.out.println("|____________________________________________|");
+        System.out.println("Tippe hier die Zahl ein:");
         inputModel = scanner.nextLine();
 
+
         switch (inputModel){
-            case "Cayenne":
+            case "1":
                 moneyCounter += 80000;
                 System.out.println();
-                System.out.println("Current car costs: " + moneyCounter);
+                System.out.println("Dein Wagen Preis beträgt gerade: " + moneyCounter);
                 System.out.println();
                 chooseExtra();
                 break;
-            case "Macan":
+            case "2":
                 moneyCounter += 60000;
                 System.out.println();
-                System.out.println("Current car costs: " + moneyCounter);
+                System.out.println("Dein Wagen Preis beträgt gerade: " + moneyCounter);
                 System.out.println();
                 chooseExtra();
                 break;
+            case "3":
+                System.out.println();
+                System.out.println("______________________________________________");
+                System.out.println("| Wähle die Kategorie deines Auto aus         |");
+                System.out.println("| 1. Suv                                      |");
+                System.out.println("| 2. Limo                                     |");
+                System.out.println("| 3. Coupe                                    |");
+                System.out.println("| 4. Cabrio                                   |");
+                System.out.println("|_____________________________________________|");
+                System.out.println("Tippe hier die Zahl ein:");
+                chooseCategory();
             default:
                 System.out.println("Type the exact word");
                 chooseSuv();
@@ -71,26 +94,43 @@ public class Main {
     }
 
     public static void chooseLimo(){
-        System.out.println("Choose your Model");
-        System.out.println("Taycan, Panamera");
         System.out.println();
+        System.out.println("______________________________________________");
+        System.out.println("| Die Limo-Modelle die zur Verfügung wären:  |");
+        System.out.println("| 1. Taycan Turbo S (120'000.-)              |");
+        System.out.println("| 2. Panamera 4S    (130'000.-)              |");
+        System.out.println("|____________________________________________|");
+        System.out.println("| 3. Falls du zurück zur Kategorie möchtest  |");
+        System.out.println("|____________________________________________|");
+        System.out.println("Tippe hier die Zahl ein:");
         inputModel = scanner.nextLine();
 
         switch (inputModel){
-            case "Taycan":
+            case "1":
                 moneyCounter += 120000;
                 System.out.println();
-                System.out.println("Current car costs: " + moneyCounter);
+                System.out.println("Dein Wagen Preis beträgt gerade: " + moneyCounter);
                 System.out.println();
                 chooseExtra();
                 break;
-            case "Panamera":
+            case "2":
                 moneyCounter += 130000;
                 System.out.println();
-                System.out.println("Current car costs: " + moneyCounter);
+                System.out.println("Dein Wagen Preis beträgt gerade: " + moneyCounter);
                 System.out.println();
                 chooseExtra();
                 break;
+            case "3":
+                System.out.println();
+                System.out.println("______________________________________________");
+                System.out.println("| Wähle die Kategorie deines Auto aus         |");
+                System.out.println("| 1. Suv                                      |");
+                System.out.println("| 2. Limo                                     |");
+                System.out.println("| 3. Coupe                                    |");
+                System.out.println("| 4. Cabrio                                   |");
+                System.out.println("|_____________________________________________|");
+                System.out.println("Tippe hier die Zahl ein:");
+                chooseCategory();
             default:
                 System.out.println("Type the exact word");
                 chooseLimo();
@@ -107,17 +147,28 @@ public class Main {
             case "911 Turbo S":
                 moneyCounter += 150000;
                 System.out.println();
-                System.out.println("Current car costs: " + moneyCounter);
+                System.out.println("Dein Wagen Preis beträgt gerade: " + moneyCounter);
                 System.out.println();
                 chooseExtra();
                 break;
             case "718 Boxster":
                 moneyCounter += 80000;
                 System.out.println();
-                System.out.println("Current car costs: " + moneyCounter);
+                System.out.println("Dein Wagen Preis beträgt gerade: " + moneyCounter);
                 System.out.println();
                 chooseExtra();
                 break;
+            case "3":
+                System.out.println();
+                System.out.println("______________________________________________");
+                System.out.println("| Wähle die Kategorie deines Auto aus         |");
+                System.out.println("| 1. Suv                                      |");
+                System.out.println("| 2. Limo                                     |");
+                System.out.println("| 3. Coupe                                    |");
+                System.out.println("| 4. Cabrio                                   |");
+                System.out.println("|_____________________________________________|");
+                System.out.println("Tippe hier die Zahl ein:");
+                chooseCategory();
             default:
                 System.out.println("Type the exact word");
                 chooseCoupe();
@@ -134,17 +185,28 @@ public class Main {
             case "911 Cabrio":
                 moneyCounter += 160000;
                 System.out.println();
-                System.out.println("Current car costs: " + moneyCounter);
+                System.out.println("Dein Wagen Preis beträgt gerade: " + moneyCounter);
                 System.out.println();
                 chooseExtra();
                 break;
             case "718 Cabrio":
                 moneyCounter += 90000;
                 System.out.println();
-                System.out.println("Current car costs: " + moneyCounter);
+                System.out.println("Dein Wagen Preis beträgt gerade: " + moneyCounter);
                 System.out.println();
                 chooseExtra();
                 break;
+            case "3":
+                System.out.println();
+                System.out.println("______________________________________________");
+                System.out.println("| Wähle die Kategorie deines Auto aus         |");
+                System.out.println("| 1. Suv                                      |");
+                System.out.println("| 2. Limo                                     |");
+                System.out.println("| 3. Coupe                                    |");
+                System.out.println("| 4. Cabrio                                   |");
+                System.out.println("|_____________________________________________|");
+                System.out.println("Tippe hier die Zahl ein:");
+                chooseCategory();
             default:
                 System.out.println("Type the exact word");
                 chooseCabrio();
