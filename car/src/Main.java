@@ -50,11 +50,53 @@ public class Main {
             case "4":
                 chooseCabrio();
                 break;
+            case "5":
+                chooseAboutus();
+                break;
+
             default:
                 System.out.println("Tippe bloss die Zahl ein:");
                 chooseCategory();
         }
     }
+
+    public static void chooseAboutus() {
+        System.out.println("________________________________________________");
+        System.out.println("| Wir sind zwei Lernende, welche die           |");
+        System.out.println("| Technische Berufsschule Zürich besuchen.     |");
+        System.out.println("| Wir besuchen gerade das Informatikmodul 226a,|");
+        System.out.println("| wo wir mehr zur Programmierung mit Java      |");
+        System.out.println("| erfahren und erleben dürfen.                 |");
+        System.out.println("|______________________________________________|");
+        System.out.println("| 1. Zurück zur Hauptseite                     |");
+        System.out.println("| 2. Das Programm beenden                      |");
+        System.out.println("|______________________________________________|");
+        System.out.println("Tippe hier die Zahl ein:");
+        inputModel = scanner.nextLine();
+
+        switch (inputModel){
+            case "1":
+                System.out.println();
+                System.out.println("________________________________________________");
+                System.out.println("| Wähle die Kategorie deines Auto aus          |");
+                System.out.println("| 1. SUV                                       |");
+                System.out.println("| 2. Limo                                      |");
+                System.out.println("| 3. Coupé                                     |");
+                System.out.println("| 4. Cabrio                                    |");
+                System.out.println("|______________________________________________|");
+                System.out.println("Tippe hier die Zahl ein:");
+                chooseCategory();
+                break;
+            case "2":
+                System.out.println("Dankeschön, dass du unsere Applikation benutzt hast.");
+                System.exit(0);
+                break;
+            default:
+                System.out.println("Tippe bloss die Zahl ein");
+                chooseAboutus();
+        }
+    }
+
 
     public static void chooseSuv(){
         System.out.println();

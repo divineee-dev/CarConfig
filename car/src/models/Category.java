@@ -4,6 +4,7 @@ public class Category {
     private String name;
     private CarModel model;
 
+
     public Category(String name, CarModel model) {
         this.name = name;
         this.model = model;
