@@ -1,8 +1,8 @@
 package models;
 
 public class CarModel {
-    public String name;
-    public Extras extras;
+    private String name;
+    private Extras extras;
 
     public CarModel(String name, Extras extras) {
         this.name = name;

@@ -1,10 +1,8 @@
 package models;
 
-import java.util.List;
-
 public class Category {
-    public String name;
-    public CarModel model;
+    private String name;
+    private CarModel model;
 
     public Category(String name, CarModel model) {
         this.name = name;
