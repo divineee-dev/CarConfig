@@ -1,22 +1,22 @@
 package models;
 
 public class Extras {
-    public boolean color;
+    public int color;
     public int rims;
     public boolean carbon;
 
-    public Extras(boolean color, int rims, boolean carbon) {
-        this.color = color;
-        this.rims = rims;
+    public Extras( boolean carbon, int rims, int color) {
         this.carbon = carbon;
-    }
-
-    public boolean getColor() {
-        return color;
-    }
-
-    public void setColor(boolean color) {
+        this.rims = rims;
         this.color = color;
+    }
+
+    public boolean isCarbon() {
+        return carbon;
+    }
+
+    public void setCarbon(boolean carbon) {
+        this.carbon = carbon;
     }
 
     public int getRims() {
@@ -27,12 +27,12 @@ public class Extras {
         this.rims = rims;
     }
 
-    public boolean isCarbon() {
-        return carbon;
+    public int getColor() {
+        return color;
     }
 
-    public void setCarbon(boolean carbon) {
-        this.carbon = carbon;
+    public void setColor(int color) {
+        this.color = color;
     }
 
     @Override
