@@ -319,7 +319,7 @@ public class Main {
                 moneyCounter += 13000;
                 carbon = "Carbon Paket";
                 carbonValidator = false;
-            } else if (inputColorExtra.equals("2")){
+            } else if (inputCarbonExtra.equals("2")){
                 carbon = "Kein Carbon Paket";
                 carbonValidator = false;
             } else {
